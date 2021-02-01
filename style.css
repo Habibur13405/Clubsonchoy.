@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+  body{
+    margin-top: 60px;
+    text-align: center;
+    
+    min-height: 100vh;
+    background: skyblue;
+    background-attachment: fixed;
+    background-size: cover;
+    
+    
+  }
+  .book{
+    margin-left: 80px;
+    margin-top: 40px;
+    position: relative;
+    top: 0;
+    height: 280px;
+    width: 200px;
+    background-image: url(Q.jpg);
+    transform: rotate(-20deg) skewX(10deg);
+    box-shadow: -10px 20px 30px #1F224880;
+    transition: 1s;
+    background-size: 200px 274px;
+    
+  }
+  .book:hover{
+    transform: rotate(-30deg) translate (50px,-50px);
+    box-shadow: -30px 30px 80px ;
+  }
+  .book:before{
+    content: "";
+    height: 100%; 
+    width: 20px;
+    background: #1E9E00;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: skewY(-45deg) translate(-20px,-10px);
+    
+  }
+  .book:after{
+    content: "";
+    height: 20px;
+    width: 100%;
+    background: #AFAFA7;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: skewX(-44deg) translate(10px,20px);
+    
+  }
